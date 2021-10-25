@@ -32,4 +32,10 @@ pwSplit[_[pairs : {{_, _} ..}, expr_]] :=
  Axes -> True]
  ```
 
+ ```
+ Export["smoothl1.png",
+ Plot[Evaluate[pwSplit@pw], {x, -2, 2}, PlotStyle -> Thick,
+  Axes -> True], ImageSize -> Scaled[.8], ImageResolution -> 300]
+ ```
+
  [1] https://mathematica.stackexchange.com/questions/1128/plotting-piecewise-function-with-distinct-colors-in-each-section
